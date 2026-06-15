@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       // Platform logo character or name
       let platformLabel = item.platform.toUpperCase();
-      if (item.platform === 'x') platformLabel = 'X (Twitter)';
+      if (item.platform === 'max') platformLabel = 'Max';
       else if (item.platform === 'ok') platformLabel = 'Одноклассники';
       
       // Link generators
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (item.platform === 'telegram') link = `https://t.me/${item.handle}`;
       else if (item.platform === 'vk') link = `https://vk.com/${item.handle}`;
       else if (item.platform === 'instagram') link = `https://instagram.com/${item.handle}`;
-      else if (item.platform === 'x') link = `https://x.com/${item.handle}`;
+      else if (item.platform === 'max') link = `https://x.com/${item.handle}`;
       else if (item.platform === 'ok') link = `https://ok.ru/${item.handle}`;
 
       const likesDisplay = item.platform === 'telegram' ? 'Н/Д' : formatNumber(item.avg_likes);
@@ -325,6 +325,27 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <span class="detail-desc">${likeDesc}</span>
           </div>
+
+          <div class="detail-section" style="border-top: 1px solid var(--border-color); padding-top: 0.75rem; margin-top: 0.75rem;">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;">
+              <div style="background-color: hsl(223, 20%, 15%); padding: 0.5rem 0.75rem; border-radius: 6px; display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">Ср. комментарии</span>
+                <span style="font-size: 0.95rem; color: var(--text-primary); font-weight: 700; margin-top: 0.15rem;">${item.avg_comments !== undefined ? formatNumber(item.avg_comments) : '0'}</span>
+              </div>
+              <div style="background-color: hsl(223, 20%, 15%); padding: 0.5rem 0.75rem; border-radius: 6px; display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">Ср. репосты</span>
+                <span style="font-size: 0.95rem; color: var(--text-primary); font-weight: 700; margin-top: 0.15rem;">${item.avg_reposts !== undefined ? formatNumber(item.avg_reposts) : '0'}</span>
+              </div>
+              <div style="background-color: hsl(223, 20%, 15%); padding: 0.5rem 0.75rem; border-radius: 6px; display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">Постов в день</span>
+                <span style="font-size: 0.95rem; color: var(--text-primary); font-weight: 700; margin-top: 0.15rem;">${item.posts_per_day !== undefined ? item.posts_per_day : '4'}</span>
+              </div>
+              <div style="background-color: hsl(223, 20%, 15%); padding: 0.5rem 0.75rem; border-radius: 6px; display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">Индекс внимания (ERR)</span>
+                <span style="font-size: 0.95rem; color: var(--accent-primary); font-weight: 700; margin-top: 0.15rem;">${item.err_rate !== undefined ? item.err_rate.toFixed(2) + '%' : '0.00%'}</span>
+              </div>
+            </div>
+          </div>
         </div>
       `;
       
@@ -370,7 +391,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const val = platformSum[platform];
       const sharePct = totalAudienceSum > 0 ? (val / totalAudienceSum * 100) : 0;
       let label = platform.toUpperCase();
-      if (platform === 'x') label = 'X (Twitter)';
+      if (platform === 'max') label = 'Max';
+      else if (platform === 'ok') label = 'Одноклассники';
       
       shareHtml += `
         <div class="bar-chart-item">

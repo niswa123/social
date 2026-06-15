@@ -94,8 +94,36 @@
     "platform": "telegram",
     "handle": "feodosia_chp",
     "name": "Феодосия ЧП",
-    "city": "Feodosia",
+    "city": "Феодосия",
     "category": "Происшествия"
+  },
+  {
+    "platform": "telegram",
+    "handle": "mash_na_volne",
+    "name": "Mash на волне",
+    "city": "Крым (Общий)",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "crimeaincident",
+    "name": "Крым оперативный",
+    "city": "Крым (Общий)",
+    "category": "Происшествия"
+  },
+  {
+    "platform": "telegram",
+    "handle": "simf_overheard",
+    "name": "Подслушано Симферополь",
+    "city": "Симферополь",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "telegram",
+    "handle": "alushta_overheard_tg",
+    "name": "Подслушано Алушта",
+    "city": "Алушта",
+    "category": "Подслушано"
   },
   {
     "platform": "vk",
@@ -182,6 +210,20 @@
     "category": "Подслушано"
   },
   {
+    "platform": "vk",
+    "handle": "mash.na.volne",
+    "name": "Mash на волне (ВК)",
+    "city": "Крым (Общий)",
+    "category": "Новости"
+  },
+  {
+    "platform": "vk",
+    "handle": "alushta_live",
+    "name": "Алушта LIVE",
+    "city": "Алушта",
+    "category": "Общество"
+  },
+  {
     "platform": "instagram",
     "handle": "crimea_life",
     "name": "Крым Life",
@@ -190,6 +232,8 @@
     "fallback_followers": 78300,
     "fallback_views": 18200,
     "fallback_likes": 2400,
+    "fallback_comments": 85,
+    "fallback_reposts": 110,
     "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
   },
   {
@@ -201,6 +245,8 @@
     "fallback_followers": 112000,
     "fallback_views": 32000,
     "fallback_likes": 4100,
+    "fallback_comments": 140,
+    "fallback_reposts": 250,
     "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
   },
   {
@@ -212,6 +258,8 @@
     "fallback_followers": 43500,
     "fallback_views": 8900,
     "fallback_likes": 1150,
+    "fallback_comments": 42,
+    "fallback_reposts": 65,
     "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
   },
   {
@@ -223,6 +271,8 @@
     "fallback_followers": 52100,
     "fallback_views": 11200,
     "fallback_likes": 1540,
+    "fallback_comments": 58,
+    "fallback_reposts": 90,
     "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
   },
   {
@@ -234,6 +284,8 @@
     "fallback_followers": 61200,
     "fallback_views": 14500,
     "fallback_likes": 1920,
+    "fallback_comments": 74,
+    "fallback_reposts": 125,
     "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
   },
   {
@@ -245,51 +297,22 @@
     "fallback_followers": 31400,
     "fallback_views": 6200,
     "fallback_likes": 790,
+    "fallback_comments": 31,
+    "fallback_reposts": 40,
     "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
   },
   {
-    "platform": "x",
-    "handle": "CrimeaUA1",
-    "name": "Крымский бандеровец",
+    "platform": "instagram",
+    "handle": "mash_na_volne",
+    "name": "Mash на волне (Insta)",
     "city": "Крым (Общий)",
     "category": "Новости",
-    "fallback_followers": 158000,
-    "fallback_views": 25000,
-    "fallback_likes": 1420,
-    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
-  },
-  {
-    "platform": "x",
-    "handle": "CrimeaRepublic",
-    "name": "Республика Крым",
-    "city": "Крым (Общий)",
-    "category": "Новости",
-    "fallback_followers": 12500,
-    "fallback_views": 1100,
-    "fallback_likes": 45,
-    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
-  },
-  {
-    "platform": "x",
-    "handle": "SimferopolNews",
-    "name": "Новости Симферополя",
-    "city": "Симферополь",
-    "category": "Новости",
-    "fallback_followers": 8700,
-    "fallback_views": 850,
-    "fallback_likes": 32,
-    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
-  },
-  {
-    "platform": "x",
-    "handle": "SevastopolNews",
-    "name": "Новости Севастополя",
-    "city": "Севастополь",
-    "category": "Новости",
-    "fallback_followers": 9300,
-    "fallback_views": 920,
-    "fallback_likes": 38,
-    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+    "fallback_followers": 95000,
+    "fallback_views": 41000,
+    "fallback_likes": 5300,
+    "fallback_comments": 190,
+    "fallback_reposts": 320,
+    "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
   },
   {
     "platform": "ok",
@@ -300,6 +323,8 @@
     "fallback_followers": 24500,
     "fallback_views": 4800,
     "fallback_likes": 120,
+    "fallback_comments": 15,
+    "fallback_reposts": 45,
     "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
   },
   {
@@ -311,6 +336,8 @@
     "fallback_followers": 18200,
     "fallback_views": 3500,
     "fallback_likes": 95,
+    "fallback_comments": 12,
+    "fallback_reposts": 30,
     "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
   },
   {
@@ -322,6 +349,112 @@
     "fallback_followers": 12500,
     "fallback_views": 2100,
     "fallback_likes": 55,
+    "fallback_comments": 8,
+    "fallback_reposts": 18,
     "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "crimea_news_ok",
+    "name": "Новости Крыма",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "fallback_followers": 31200,
+    "fallback_views": 6100,
+    "fallback_likes": 160,
+    "fallback_comments": 22,
+    "fallback_reposts": 50,
+    "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "sevastopol_news_ok",
+    "name": "Новости Севастополя",
+    "city": "Севастополь",
+    "category": "Новости",
+    "fallback_followers": 15400,
+    "fallback_views": 2900,
+    "fallback_likes": 75,
+    "fallback_comments": 10,
+    "fallback_reposts": 20,
+    "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
+  },
+  {
+    "platform": "max",
+    "handle": "CrimeaUA1",
+    "name": "Крымский бандеровец",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "fallback_followers": 158000,
+    "fallback_views": 25000,
+    "fallback_likes": 1420,
+    "fallback_comments": 340,
+    "fallback_reposts": 480,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "max",
+    "handle": "CrimeaRepublic",
+    "name": "Республика Крым",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "fallback_followers": 12500,
+    "fallback_views": 1100,
+    "fallback_likes": 45,
+    "fallback_comments": 12,
+    "fallback_reposts": 18,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "max",
+    "handle": "SimferopolNews",
+    "name": "Новости Симферополя",
+    "city": "Симферополь",
+    "category": "Новости",
+    "fallback_followers": 8700,
+    "fallback_views": 850,
+    "fallback_likes": 32,
+    "fallback_comments": 6,
+    "fallback_reposts": 10,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "max",
+    "handle": "SevastopolNews",
+    "name": "Новости Севастополя",
+    "city": "Севастополь",
+    "category": "Новости",
+    "fallback_followers": 9300,
+    "fallback_views": 920,
+    "fallback_likes": 38,
+    "fallback_comments": 8,
+    "fallback_reposts": 12,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "max",
+    "handle": "CrimeaIncidentMax",
+    "name": "ЧП Крым Max",
+    "city": "Крым (Общий)",
+    "category": "Происшествия",
+    "fallback_followers": 14200,
+    "fallback_views": 3800,
+    "fallback_likes": 210,
+    "fallback_comments": 45,
+    "fallback_reposts": 72,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "max",
+    "handle": "YaltaNewsMax",
+    "name": "Ялта Новости Max",
+    "city": "Ялта",
+    "category": "Новости",
+    "fallback_followers": 7500,
+    "fallback_views": 790,
+    "fallback_likes": 28,
+    "fallback_comments": 5,
+    "fallback_reposts": 8,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
   }
 ]
