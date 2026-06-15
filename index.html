@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Интерактивный дашборд новостных пабликов Республики Крым. Статистика по Telegram, ВКонтакте, Instagram и X (Twitter).">
+  <title>Мониторинг новостных пабликов Крыма</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Медиа-карта Крыма</h1>
+      <p class="subtitle">Интерактивный мониторинг ключевых новостных каналов, городских сообществ, пабликов типа «Подслушано» и региональных ЧП-групп Республики Крым.</p>
+    </header>
+
+    <!-- Global Stats Summary -->
+    <section class="stats-summary" id="stats-summary">
+      <div class="stat-box">
+        <div class="stat-box-label">Всего пабликов</div>
+        <div class="stat-box-value" id="stat-total-channels">-</div>
+        <div class="stat-box-subtext">отслеживаемые источники</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-label">Общая аудитория</div>
+        <div class="stat-box-value" id="stat-total-audience">-</div>
+        <div class="stat-box-subtext">активные подписчики</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-label">Ср. просмотры</div>
+        <div class="stat-box-value" id="stat-avg-views">-</div>
+        <div class="stat-box-subtext">на последние 10 постов</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-label">Макс. вовлеченность</div>
+        <div class="stat-box-value" id="stat-max-engagement">-</div>
+        <div class="stat-box-subtext">показатель Engagement Rate</div>
+      </div>
+    </section>
+
+    <!-- Filters and Controls Panel -->
+    <section class="controls-panel">
+      <div class="search-row">
+        <div class="search-wrapper">
+          <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Поиск по названию, тегу, городу...">
+        </div>
+        
+        <div class="filter-group">
+          <label class="filter-label" for="platform-select">Платформа:</label>
+          <select id="platform-select">
+            <option value="all">Все платформы</option>
+            <option value="telegram">Telegram</option>
+            <option value="vk">ВКонтакте</option>
+            <option value="instagram">Instagram</option>
+            <option value="x">X (Twitter)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label" for="city-select">Регион/Город:</label>
+          <select id="city-select">
+            <option value="all">Все регионы</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sort-container">
+        <span class="filter-label">Сортировка:</span>
+        <button class="sort-btn active" data-sort="audience">Аудитория</button>
+        <button class="sort-btn" data-sort="views">Просмотры</button>
+        <button class="sort-btn" data-sort="likes">Лайки</button>
+        <button class="sort-btn" data-sort="engagement">Вовлеченность (ER)</button>
+      </div>
+    </section>
+
+    <!-- Grid Results -->
+    <main>
+      <div class="results-header">
+        <div class="results-count" id="results-count-text">Загрузка данных...</div>
+      </div>
+
+      <div class="grid-layout" id="cards-grid">
+        <!-- Dynamic Cards Inserted Here -->
+      </div>
+    </main>
+
+    <!-- Data Visualization Charts -->
+    <section class="charts-container">
+      <div class="chart-card">
+        <h2 class="chart-title">Топ 5 пабликов по аудитории</h2>
+        <div id="chart-top-audience">
+          <!-- Custom CSS Chart rendered by JS -->
+        </div>
+      </div>
+      
+      <div class="chart-card">
+        <h2 class="chart-title">Доля аудитории по платформам</h2>
+        <div id="chart-platform-share">
+          <!-- Custom CSS Chart rendered by JS -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Load Database and Dashbaord JS -->
+  <script src="data.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

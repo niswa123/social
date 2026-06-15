@@ -1,0 +1,294 @@
+[
+  {
+    "platform": "telegram",
+    "handle": "rian_crimea",
+    "name": "РИА Новости Крым",
+    "city": "Крым (Общий)",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "chp_crimea",
+    "name": "ЧП / Крым",
+    "city": "Крым (Общий)",
+    "category": "Происшествия"
+  },
+  {
+    "platform": "telegram",
+    "handle": "crimea24tv",
+    "name": "Крым 24 | Z",
+    "city": "Крым (Общий)",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "minkurortov",
+    "name": "Минкурортов Крыма",
+    "city": "Крым (Общий)",
+    "category": "Туризм"
+  },
+  {
+    "platform": "telegram",
+    "handle": "sevastopol_news",
+    "name": "Севастополь в курсе",
+    "city": "Севастополь",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "chp_sevastopol",
+    "name": "ЧП Севастополь",
+    "city": "Севастополь",
+    "category": "Происшествия"
+  },
+  {
+    "platform": "telegram",
+    "handle": "yalta_podslushano",
+    "name": "ПОДСЛУШАНО ЯЛТА",
+    "city": "Ялта",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "telegram",
+    "handle": "agp_yalta",
+    "name": "АГП Ялта",
+    "city": "Ялта",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "kerch_news",
+    "name": "КерчьИНФО",
+    "city": "Керчь",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "seanewskerch",
+    "name": "Мы — КЕРЧЬ!",
+    "city": "Керчь",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "evpa_chp",
+    "name": "Евпатория ЧП",
+    "city": "Евпатория",
+    "category": "Происшествия"
+  },
+  {
+    "platform": "telegram",
+    "handle": "evp_pod",
+    "name": "Евпатория Подслушано",
+    "city": "Евпатория",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "telegram",
+    "handle": "feodosia_news",
+    "name": "Феодосия Новости",
+    "city": "Феодосия",
+    "category": "Новости"
+  },
+  {
+    "platform": "telegram",
+    "handle": "feodosia_chp",
+    "name": "Феодосия ЧП",
+    "city": "Feodosia",
+    "category": "Происшествия"
+  },
+  {
+    "platform": "vk",
+    "handle": "typical_simferopol",
+    "name": "ТИПИЧНЫЙ СИМФЕРОПОЛЬ",
+    "city": "Симферополь",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "vk",
+    "handle": "simferopol_city",
+    "name": "Симферополь",
+    "city": "Симферополь",
+    "category": "Общество"
+  },
+  {
+    "platform": "vk",
+    "handle": "sevastopol_groupe",
+    "name": "Севастополь | Новости",
+    "city": "Севастополь",
+    "category": "Новости"
+  },
+  {
+    "platform": "vk",
+    "handle": "sevas_92",
+    "name": "Подслушано Севастополь",
+    "city": "Севастополь",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "vk",
+    "handle": "typical_sevastopol",
+    "name": "Типичный Севастополь",
+    "city": "Севастополь",
+    "category": "Общество"
+  },
+  {
+    "platform": "vk",
+    "handle": "podslushano_yalta",
+    "name": "ПОДСЛУШАНО ЯЛТА",
+    "city": "Ялта",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "vk",
+    "handle": "yalta_gorod_schastya",
+    "name": "Ялта-Город Счастья",
+    "city": "Ялта",
+    "category": "Туризм"
+  },
+  {
+    "platform": "vk",
+    "handle": "podslushano_kerch",
+    "name": "ПОДСЛУШАНО | КЕРЧЬ",
+    "city": "Керчь",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "vk",
+    "handle": "kerch_segodnya",
+    "name": "КЕРЧЬ СЕГОДНЯ",
+    "city": "Керчь",
+    "category": "Новости"
+  },
+  {
+    "platform": "vk",
+    "handle": "evpator_podslushano",
+    "name": "Евпатория | Подслушано",
+    "city": "Евпатория",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "vk",
+    "handle": "evpator_ru",
+    "name": "Новости Евпатории",
+    "city": "Евпатория",
+    "category": "Новости"
+  },
+  {
+    "platform": "vk",
+    "handle": "podslushano_feodosiya",
+    "name": "Подслушано Феодосия",
+    "city": "Феодосия",
+    "category": "Подслушано"
+  },
+  {
+    "platform": "instagram",
+    "handle": "crimea_life",
+    "name": "Крым Life",
+    "city": "Крым (Общий)",
+    "category": "Стиль жизни",
+    "fallback_followers": 78300,
+    "fallback_views": 18200,
+    "fallback_likes": 2400,
+    "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
+  },
+  {
+    "platform": "instagram",
+    "handle": "more.kryma",
+    "name": "Море Крыма",
+    "city": "Крым (Общий)",
+    "category": "Туризм",
+    "fallback_followers": 112000,
+    "fallback_views": 32000,
+    "fallback_likes": 4100,
+    "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
+  },
+  {
+    "platform": "instagram",
+    "handle": "typical_simferopol",
+    "name": "Типичный Симферополь",
+    "city": "Симферополь",
+    "category": "Общество",
+    "fallback_followers": 43500,
+    "fallback_views": 8900,
+    "fallback_likes": 1150,
+    "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
+  },
+  {
+    "platform": "instagram",
+    "handle": "sevastopol_life",
+    "name": "Севастополь Life",
+    "city": "Севастополь",
+    "category": "Общество",
+    "fallback_followers": 52100,
+    "fallback_views": 11200,
+    "fallback_likes": 1540,
+    "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
+  },
+  {
+    "platform": "instagram",
+    "handle": "yalta_life",
+    "name": "Ялта Life",
+    "city": "Ялта",
+    "category": "Общество",
+    "fallback_followers": 61200,
+    "fallback_views": 14500,
+    "fallback_likes": 1920,
+    "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
+  },
+  {
+    "platform": "instagram",
+    "handle": "kerch_info",
+    "name": "Керчь Инфо",
+    "city": "Керчь",
+    "category": "Новости",
+    "fallback_followers": 31400,
+    "fallback_views": 6200,
+    "fallback_likes": 790,
+    "fallback_avatar": "https://img.icons8.com/color/150/instagram-new.png"
+  },
+  {
+    "platform": "x",
+    "handle": "CrimeaUA1",
+    "name": "Крымский бандеровец",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "fallback_followers": 158000,
+    "fallback_views": 25000,
+    "fallback_likes": 1420,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "x",
+    "handle": "CrimeaRepublic",
+    "name": "Республика Крым",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "fallback_followers": 12500,
+    "fallback_views": 1100,
+    "fallback_likes": 45,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "x",
+    "handle": "SimferopolNews",
+    "name": "Новости Симферополя",
+    "city": "Симферополь",
+    "category": "Новости",
+    "fallback_followers": 8700,
+    "fallback_views": 850,
+    "fallback_likes": 32,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "x",
+    "handle": "SevastopolNews",
+    "name": "Новости Севастополя",
+    "city": "Севастополь",
+    "category": "Новости",
+    "fallback_followers": 9300,
+    "fallback_views": 920,
+    "fallback_likes": 38,
+    "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  }
+]
