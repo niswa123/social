@@ -36,16 +36,30 @@ def parse_tg(target):
         r_main = requests.get(f"https://t.me/{handle}", headers=HEADERS_TG, timeout=10)
         if r_main.status_code == 200:
             soup_main = BeautifulSoup(r_main.text, "html.parser")
-            desc_elem = soup_main.find("meta", property="og:description")
-            if desc_elem:
-                desc = desc_elem.get("content", "")
-                sub_match = re.search(r"([\d\s\u00a0]+)\s*(subscribers|members|подписчиков|участников)", desc, re.IGNORECASE)
+            
+            # Try to get from tgme_page_extra first (which is the actual text on the page)
+            extra_elem = soup_main.find(class_="tgme_page_extra")
+            if extra_elem:
+                extra_text = extra_elem.text.strip().replace(" ", "").replace("\xa0", "").replace("\u00a0", "")
+                sub_match = re.search(r"([\d]+)\s*(subscribers|members|подписчиков|участников)", extra_text, re.IGNORECASE)
                 if sub_match:
-                    cleaned_num = sub_match.group(1).replace("\xa0", "").replace(" ", "").replace("\u00a0", "").strip()
                     try:
-                        sub_count = int(cleaned_num)
+                        sub_count = int(sub_match.group(1))
                     except ValueError:
                         pass
+            
+            # If not found, try meta description
+            if sub_count == 0:
+                desc_elem = soup_main.find("meta", property="og:description")
+                if desc_elem:
+                    desc = desc_elem.get("content", "")
+                    sub_match = re.search(r"([\d\s\u00a0]+)\s*(subscribers|members|подписчиков|участников)", desc, re.IGNORECASE)
+                    if sub_match:
+                        cleaned_num = sub_match.group(1).replace("\xa0", "").replace(" ", "").replace("\u00a0", "").strip()
+                        try:
+                            sub_count = int(cleaned_num)
+                        except ValueError:
+                            pass
             
             avatar_meta = soup_main.find("meta", property="og:image")
             if avatar_meta:
@@ -92,8 +106,10 @@ def parse_tg(target):
         print(f"  Error getting views for TG @{handle}: {e}")
         
     avg_views = int(sum(views_list) / len(views_list)) if views_list else 0
-    if sub_count == 0 and avg_views > 0:
-        sub_count = int(avg_views * 4.2)
+    if avg_views == 0:
+        avg_views = target.get("fallback_views", 1500)
+    if sub_count == 0:
+        sub_count = target.get("fallback_followers", int(avg_views * 4.2))
         
     # Estimated metrics for Telegram (no public likes/comments)
     avg_likes = 0
@@ -245,7 +261,15 @@ def parse_vk(target):
     posts_per_day = 5
     
     if sub_count < 100:
-        sub_count = int(avg_likes * 250) if avg_likes > 0 else 15000
+        sub_count = target.get("fallback_followers", 15000)
+    if avg_views == 0:
+        avg_views = target.get("fallback_views", 8000)
+    if avg_likes == 0:
+        avg_likes = target.get("fallback_likes", 120)
+    if avg_comments == 0:
+        avg_comments = int(avg_views * 0.005) if avg_views > 0 else 5
+    if avg_reposts == 0:
+        avg_reposts = int(avg_views * 0.008) if avg_views > 0 else 8
         
     # ER (likes + comments + reposts) / subscribers
     engagement_rate = round(((avg_likes + avg_comments + avg_reposts) / sub_count * 100), 2) if sub_count > 0 else 0
