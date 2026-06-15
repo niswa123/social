@@ -5,10 +5,10 @@ const SCRAPED_DATA = [
     "name": "РИА Новости Крым",
     "city": "Крым (Общий)",
     "category": "Новости",
-    "audience": 3376,
-    "avg_views": 804,
+    "audience": 2604,
+    "avg_views": 620,
     "avg_likes": 0,
-    "engagement_rate": 23.82,
+    "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/pGD-Ym6oon6lVWwD_UAAYs-kILSZ89yKwn4GpUpObFa7Je5CByR-EeLPlibT61ybHg_Sb6CAtEK6lPFtwlqr2gtQdTQB4Dyd4mLJyY3muiu5UK045g2X_RhLPYSolpffHYusL35heA8Q5gUZqLgBI26ZNaEo8X6OZQw4mlGAbAvn9JZclP671CkdFih4_f3qWurB5t3qqINj2SC330TAhvVn_QyWL_taJyd0-JyI45rn_Pg68ko96YZfgpKnsN-C1nboGDu1G-L5G_1dd3Wlk5-7iKlibBG9XgIcUuNeg2S1PkwzOZXJWTAaGBz0dH7voQS2C4uqbPHnLbzmVCJ7ng.jpg"
   },
   {
@@ -17,8 +17,8 @@ const SCRAPED_DATA = [
     "name": "ЧП / Крым",
     "city": "Крым (Общий)",
     "category": "Происшествия",
-    "audience": 133093,
-    "avg_views": 31689,
+    "audience": 142338,
+    "avg_views": 33890,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/W1Ob_fdvU8IhAfLn71-tLy0XT5ncxvbnwHRMB4POgxSefGmAsU1NJxQrQMpklhlcS5bMG14NAX4oh3HnNiGr04yE38pUwN0XZtL65aKpzwOnEI_rZyalQWsu5Pbzy-m1vCUu4-EEjBin_4Kip6Sqd7r56RIoKdpujxCEIG30Dunu54_ekNoIocKBMxebzKgr2x523OTwNCu9oFwErYc1TpxHn6dz8FtZqWGO8Wx1IYnejDGvToQEaEErb7mCBWeBsAHpP1KTkKrEcnupPgvKp7LomTzuRwZdztPZUZYeiAsZJEBkNKrkt_3B7weruaaFLGoG2f-omzDjf17GyU1Uhg.jpg"
@@ -41,10 +41,10 @@ const SCRAPED_DATA = [
     "name": "Министерство туризма Крыма",
     "city": "Крым (Общий)",
     "category": "Туризм",
-    "audience": 1045,
-    "avg_views": 249,
+    "audience": 1050,
+    "avg_views": 250,
     "avg_likes": 0,
-    "engagement_rate": 23.83,
+    "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/kYmiD6LwMlUugQo5p17b8ZQ1M_0FspueIAeCdT9kSohTohh_ViAQqMD3o5LLsAmG9QvVdnKmWxUeUuG_0sMssZd0AgLDKnMuhpEmn-wGHEkMj5Lg2aVgrabsbAy0dw0MLByVpbPHwR_QPTe6z6YcWXYlerhm6HgD77AuZzsJdi563j7YoNK6OYExRgEn0KvOwXKXIUePo58yWJNP21oXGhrVcg9mxk4nbZisYjoR2tibfWauzlkKJM52hnGCRLuUgiM1iaB7V2Y69qIP9iCIo89afWMCNb1ij6o_5XOjyahm5M4sRdeKz-zpnzPPhe5jkPMZ_3noya6BqqyMXMYHiw.jpg"
   },
   {
@@ -65,8 +65,8 @@ const SCRAPED_DATA = [
     "name": "ЧП / Севастополь",
     "city": "Севастополь",
     "category": "Происшествия",
-    "audience": 265687,
-    "avg_views": 63259,
+    "audience": 271320,
+    "avg_views": 64600,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/C-RFLUHQzAmPS-dh0VJaMww7XBh1d2Fjw2768lL-4fCysLMCQ8aTV7XacvW_R1vXpn8aZDzaPCaITh0UxUDqKPga2taHTYRg2xe_BnmPqbTaXJxZYcmAj_Is8TzZ3EHcV7Y3lsbMwm5IuQEKwh_RRIuPvt_8JFKF21mpRwmCeP9snQSM7toEnyQu6i69FdUsc-NP-qWcUME5o6FUfaaps1-hDOX6nUeCLcEuNCi5xpUX6XYAmxSTqkFgW0-Q3v3qLLwHEEfhvR2MCi9XnlScGjsOie26i-Cdt4FVeF0LUWYYv4XgOtrq5XgJ-ae27FIFSeaOEzBX3O9oWAONnm0I6Q.jpg"
@@ -77,8 +77,8 @@ const SCRAPED_DATA = [
     "name": "Подслушано Ялта / Алушта",
     "city": "Ялта",
     "category": "Подслушано",
-    "audience": 18043,
-    "avg_views": 4296,
+    "audience": 18685,
+    "avg_views": 4449,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/mtdnsQpwsUGEf_CCMbxPW4nC7G_UdRdFXhE1Y5nbqmATORoOZSZoc6Ecivyqle1duIyAfV8hnAJMis7E87CjTTxSRmdlQhHTruVxj229Ep2H3R2XtpJTm1_jqIsr72LVk_gAswEXYbN8tu91k3iAIS0Y2egEs9IOqe-IUK2-D0JXC5WlyZKVs5qrDBCVj4RH0E9v4CuLpKfqe4x52BFiZ0pUefKBEW6RZE2fTRX_UyleBUx8DfvU_S7C1K2WVLFPTgJpvVe4Mtrk0Rfy3xNRv5eaQr6rFOnpkhlLXUI9VMvVhhCL0gZd_or_2PUTsJ6P44bP1Lv6t9zPXCQrraxGRg.jpg"
@@ -89,8 +89,8 @@ const SCRAPED_DATA = [
     "name": "АГП Ялта | Крым",
     "city": "Ялта",
     "category": "Новости",
-    "audience": 5745,
-    "avg_views": 1368,
+    "audience": 5892,
+    "avg_views": 1403,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/mA8D0QZCilreT0JNfVi3N9E_vWBMRcpCqCKCWRdrkBx_FgQfpfT8GuUX8Px1vVHbosxyzjsndGujy5XVmsCyGjr3ih1TMoxoGkzvaENHcZQIuSm1gZ-ehepxd5jigyTh9_NzeXwvOD6DfSXndn3CjU0Fec5YgAQ91qn7TvsidTinRg93NbRp_6FhiMXPwHP7q_4_vWNPUMs_9BHhdptYSC1PToQbbvtfXDrMVDNcBUneB1jWYeM3yRuaWXTqpT2ak47rPgt8in88KlAMUt-MfRFj9GeqeBn31r65quuOgU0TkDsNCvVDOs9QmnsYy3t08JDCv_SIxfMpCcwcZg7jbg.jpg"
@@ -101,8 +101,8 @@ const SCRAPED_DATA = [
     "name": "Керчь ИНФО",
     "city": "Керчь",
     "category": "Новости",
-    "audience": 6098,
-    "avg_views": 1452,
+    "audience": 6430,
+    "avg_views": 1531,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/GSNtvvpydf8Vzzt_yfJGiUIUYioFOPirNHM2dUpSLzOUz5c2NKQvzx0AInNq6scTG8SgU8PiH5pD64yRmhc_zSRqe69IBTL9-yraGugdbu4K8psPZrYgKsiTDhcjt8asLagGZGat9c-d0KwKVDZuqtSbJMN0Vw4wzQ1zzBZjFRjYVYJLH3dXg6KTRtZ3pwRl5GiDl21wZgtzZi5vHuTX3JAO_YfYZGe9y0ngFfRQwXjUX2jzdVhAP7_1V4WUW1ZZgXJ4qKvisJWnfFop9riS1HplfssgVNH--rEkf8PI4U7UNE5R9k9_UWjhJKKssL7dLXavK7N2MnY8jRQ5wwNTyw.jpg"
@@ -113,8 +113,8 @@ const SCRAPED_DATA = [
     "name": "МыКЕРЧЬ.РФ - новости Крыма",
     "city": "Керчь",
     "category": "Новости",
-    "audience": 5607,
-    "avg_views": 1335,
+    "audience": 5850,
+    "avg_views": 1393,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/Zw02PSGhC9xAHo50PY5fBbpY0zuWRn_86ER39a2QXOSjzgAglRhJ2OOLJ8dM5zIgb4pDcUkZi0tC4bExh-WihnzrGGhXjXnFtLELpnhSqVUeaKaq7KI5l0QwBD82saHmApIJmBNHQe0Tp1K_c7BFvicanDx40QA6QwN4JvdP1_SoLPWzxCuoeznqY2hp9yxVjm-tWq5dWWuKQW4e30TR5TE8pJfNCpFwy__I1NElxueD4hlBy2wAzPvh0INNnCV5Q1f2zRYjKf6F2tp6Dg_sF7V_IWgQ2MRCNaFpB_UiTOj6f81ycGH26iRbfzQJxt4VanUcbEZ8Xrynbre-Lr7uHA.jpg"
@@ -125,8 +125,8 @@ const SCRAPED_DATA = [
     "name": "Евпатория ЧП 🔥",
     "city": "Евпатория",
     "category": "Происшествия",
-    "audience": 10424,
-    "avg_views": 2482,
+    "audience": 11604,
+    "avg_views": 2763,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/bNopJVYkT0s2rl0NBI8fuxSAiQ1__JktzqrF4vng0uxlcE03byMOe7n5wsv4WWoeJbF60QUweDNOVVxabqcQsaO0icRJzCF5odMIglqBmfnpPR1aFcRB8nAbL5YiTZlU9l46pwl6TGfjqez70GmVcmojHOUHSQ5vP7rB9H7X0Dwv6a71Uwl9vknNjBNwF3SMyvSI2nNDsU48n7rXeW4YPS7T0iccFH0zZ8PfLbeP6qLTxorILl5WpSrQc5NnqcbeeicF9zEtyuCj-uLfljZnB-8E3nqh-xhlf18SBaX_q36onUI6KLT56tNqgT2UQeiXND7G6GOpj4XHZebZvKxwoA.jpg"
@@ -137,8 +137,8 @@ const SCRAPED_DATA = [
     "name": "📣 Евпатория Подслушано (Крым)",
     "city": "Евпатория",
     "category": "Подслушано",
-    "audience": 2944,
-    "avg_views": 701,
+    "audience": 2994,
+    "avg_views": 713,
     "avg_likes": 0,
     "engagement_rate": 23.81,
     "avatar": "https://cdn4.telesco.pe/file/gYn8_T_fVdWvGqtIPyNtH8_12-ZUwxtfTwZ3gLgyErsd7Ux-mB5vrh7i70ZteFaH_l_LAxcAYAXLRandy8TN1QMfzXSd615Q2KgsQZALpaHHzVaDY5c-eh09vwrbF5pbzGKStmiMWAKX0hoDGyjkM178qu69BS4JlYeYCxOTBVvIaaMzY-0NmZ5ccJTc2d_1LExZ-TYOuGiwfirHdO6JtOtGmwtMV5ph650WqwrbFx-hmSRNrDAxtmqUPkDvWJhuoljvHxO6EoxyLKOfPhrKhLrfdfxqY16gqXoTucUpu1jIIHmRIixINhVfLCV6AeLL07gi5ET8aBKNOxnno3l7rg.jpg"
@@ -199,7 +199,7 @@ const SCRAPED_DATA = [
     "category": "Новости",
     "audience": 96298,
     "avg_views": 5010,
-    "avg_likes": 254,
+    "avg_likes": 255,
     "engagement_rate": 0.52,
     "avatar": "http://sun1-14.userapi.com/impf/UKQ19dMlN3BB7Lv_4S1RikhOQhksnqpb1cAU8A/LXvwjCuAP3Q.jpg?size=1818x606&quality=95&crop=0,0,1590,530&sign=542db9aaaacba1dabd905946b4f41a9a&type=cover_group"
   },
@@ -210,10 +210,10 @@ const SCRAPED_DATA = [
     "city": "Севастополь",
     "category": "Подслушано",
     "audience": 114775,
-    "avg_views": 423,
+    "avg_views": 438,
     "avg_likes": 0,
     "engagement_rate": 0.02,
-    "avatar": "http://sun9-68.userapi.com/s/v1/ig2/_wbbC5VK-_0A0up0piPGYU_9lpgTmqagOcxXuBtRZlpkQIadgXPpVIwSl6txgz8Oqw8d4y4D_J4H9SR_PpdKPcOS.jpg?quality=95&crop=0,0,1080,1080&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&ava=1&cs=240x240"
+    "avatar": "http://sun1-56.userapi.com/s/v1/ig2/_wbbC5VK-_0A0up0piPGYU_9lpgTmqagOcxXuBtRZlpkQIadgXPpVIwSl6txgz8Oqw8d4y4D_J4H9SR_PpdKPcOS.jpg?quality=95&crop=0,0,1080,1080&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&ava=1&cs=240x240"
   },
   {
     "platform": "vk",
@@ -249,7 +249,7 @@ const SCRAPED_DATA = [
     "avg_views": 12,
     "avg_likes": 0,
     "engagement_rate": 0.0,
-    "avatar": "http://sun9-79.userapi.com/s/v1/ig1/u1qa5FAI-geuGmqTNorK4kG_xgSaAYjqi3FAi-cwb7yHmcC-cABvQ_mjTeH937gQpcq4v_3y.jpg?quality=96&crop=0,0,720,720&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=240x240"
+    "avatar": "http://sun1-54.userapi.com/s/v1/ig1/u1qa5FAI-geuGmqTNorK4kG_xgSaAYjqi3FAi-cwb7yHmcC-cABvQ_mjTeH937gQpcq4v_3y.jpg?quality=96&crop=0,0,720,720&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=240x240"
   },
   {
     "platform": "vk",
@@ -293,11 +293,11 @@ const SCRAPED_DATA = [
     "name": "Евпатория -  наш город !!!",
     "city": "Евпатория",
     "category": "Новости",
-    "audience": 39221,
-    "avg_views": 283,
-    "avg_likes": 5,
-    "engagement_rate": 0.05,
-    "avatar": "http://sun1-55.userapi.com/QK-pgYWE0orEYxJfRLpw-eaUh5Z0C0tKKQgX5A/m-9qfd9jjaM.jpg"
+    "audience": 39222,
+    "avg_views": 195,
+    "avg_likes": 3,
+    "engagement_rate": 0.03,
+    "avatar": "http://sun9-55.userapi.com/QK-pgYWE0orEYxJfRLpw-eaUh5Z0C0tKKQgX5A/m-9qfd9jjaM.jpg"
   },
   {
     "platform": "vk",
@@ -430,5 +430,41 @@ const SCRAPED_DATA = [
     "avg_likes": 38,
     "engagement_rate": 0.61,
     "avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "vesticrimea",
+    "name": "Вести Крым",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "audience": 24500,
+    "avg_views": 4800,
+    "avg_likes": 120,
+    "engagement_rate": 0.88,
+    "avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "crimea24tv",
+    "name": "Крым 24",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "audience": 18200,
+    "avg_views": 3500,
+    "avg_likes": 95,
+    "engagement_rate": 0.91,
+    "avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "typical_simferopol",
+    "name": "Типичный Симферополь",
+    "city": "Симферополь",
+    "category": "Подслушано",
+    "audience": 12500,
+    "avg_views": 2100,
+    "avg_likes": 55,
+    "engagement_rate": 0.78,
+    "avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
   }
 ];

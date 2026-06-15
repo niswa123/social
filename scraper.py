@@ -276,3 +276,130 @@ try:
     print("\nSUCCESS: Saved parsed database to data.js!")
 except Exception as e:
     print(f"Error saving data.js: {e}")
+
+# Save results to Crimea_Social_Media_Monitoring.xlsx
+def save_to_excel(data_list):
+    print("\nЭкспорт данных в Excel...")
+    try:
+        import pandas as pd
+        from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+        from openpyxl.utils import get_column_letter
+
+        # Mapping of platforms to sheet names and brand colors (RGB hex)
+        platform_meta = {
+            "telegram": {"sheet": "Telegram", "color": "0088CC", "text_color": "FFFFFF"},
+            "vk": {"sheet": "ВКонтакте", "color": "4A76A8", "text_color": "FFFFFF"},
+            "instagram": {"sheet": "Instagram", "color": "C13584", "text_color": "FFFFFF"},
+            "x": {"sheet": "X (Twitter)", "color": "000000", "text_color": "FFFFFF"},
+            "ok": {"sheet": "Одноклассники", "color": "ED812B", "text_color": "FFFFFF"},
+        }
+
+        excel_filename = "crimea_media_monitoring.xlsx"
+        
+        with pd.ExcelWriter(excel_filename, engine="openpyxl") as writer:
+            for platform, meta in platform_meta.items():
+                plat_data = [item for item in data_list if item["platform"] == platform]
+                
+                rows = []
+                for item in plat_data:
+                    # Format link
+                    link = ""
+                    if platform == "telegram":
+                        link = f"https://t.me/{item['handle']}"
+                    elif platform == "vk":
+                        link = f"https://vk.com/{item['handle']}"
+                    elif platform == "instagram":
+                        link = f"https://instagram.com/{item['handle']}"
+                    elif platform == "x":
+                        link = f"https://x.com/{item['handle']}"
+                    elif platform == "ok":
+                        link = f"https://ok.ru/{item['handle']}"
+                    
+                    rows.append({
+                        "Название группы/канала": item["name"],
+                        "Ссылка": link,
+                        "Город/Регион": item["city"],
+                        "Категория": item["category"],
+                        "Подписчики (Аудитория)": item["audience"],
+                        "Ср. просмотров (10 постов)": item["avg_views"],
+                        "Ср. лайков (10 постов)": item["avg_likes"],
+                        "Вовлеченность (ER %)": (item["engagement_rate"] / 100.0) if item["engagement_rate"] else 0.0
+                    })
+                
+                if not rows:
+                    rows.append({
+                        "Название группы/канала": "Нет данных",
+                        "Ссылка": "",
+                        "Город/Регион": "",
+                        "Категория": "",
+                        "Подписчики (Аудитория)": 0,
+                        "Ср. просмотров (10 постов)": 0,
+                        "Ср. лайков (10 постов)": 0,
+                        "Вовлеченность (ER %)": 0.0
+                    })
+                
+                df = pd.DataFrame(rows)
+                df.to_excel(writer, sheet_name=meta["sheet"], index=False)
+                
+                workbook = writer.book
+                worksheet = writer.sheets[meta["sheet"]]
+                worksheet.views.sheetView[0].showGridLines = True
+                
+                header_font = Font(name="Segoe UI", size=11, bold=True, color=meta["text_color"])
+                header_fill = PatternFill(start_color=meta["color"], end_color=meta["color"], fill_type="solid")
+                data_font = Font(name="Segoe UI", size=10)
+                align_left = Alignment(horizontal="left", vertical="center")
+                align_right = Alignment(horizontal="right", vertical="center")
+                align_center = Alignment(horizontal="center", vertical="center")
+                
+                thin = Side(border_style="thin", color="D3D3D3")
+                border = Border(left=thin, right=thin, top=thin, bottom=thin)
+                
+                for col_num in range(1, len(df.columns) + 1):
+                    cell = worksheet.cell(row=1, column=col_num)
+                    cell.font = header_font
+                    cell.fill = header_fill
+                    cell.alignment = align_center
+                    cell.border = border
+                worksheet.row_dimensions[1].height = 28
+                
+                for row_num in range(2, len(rows) + 2):
+                    worksheet.row_dimensions[row_num].height = 22
+                    for col_num in range(1, len(df.columns) + 1):
+                        cell = worksheet.cell(row=row_num, column=col_num)
+                        cell.font = data_font
+                        cell.border = border
+                        
+                        col_name = df.columns[col_num - 1]
+                        if col_name in ["Название группы/канала", "Ссылка"]:
+                            cell.alignment = align_left
+                            if col_name == "Ссылка" and cell.value and cell.value.startswith("http"):
+                                cell.font = Font(name="Segoe UI", size=10, color="0088CC", underline="single")
+                        elif col_name in ["Город/Регион", "Категория"]:
+                            cell.alignment = align_center
+                        elif col_name in ["Подписчики (Аудитория)", "Ср. просмотров (10 постов)", "Ср. лайков (10 постов)"]:
+                            cell.alignment = align_right
+                            cell.number_format = "#,##0"
+                        elif col_name == "Вовлеченность (ER %)":
+                            cell.alignment = align_right
+                            cell.number_format = "0.00%"
+                
+                for col in worksheet.columns:
+                    max_len = 0
+                    col_letter = get_column_letter(col[0].column)
+                    for cell in col:
+                        if cell.value:
+                            val_str = str(cell.value)
+                            if cell.number_format == "0.00%":
+                                try:
+                                    val_str = f"{float(cell.value)*100:.2f}%"
+                                except ValueError:
+                                    pass
+                            max_len = max(max_len, len(val_str))
+                    worksheet.column_dimensions[col_letter].width = max(max_len + 4, 12)
+                    
+        print(f"SUCCESS: Saved Excel report to {excel_filename}!")
+    except Exception as e:
+        print(f"Error saving Excel report: {e}")
+
+save_to_excel(results)

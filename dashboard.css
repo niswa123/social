@@ -26,6 +26,7 @@
   --color-vk: hsl(212, 85%, 50%);
   --color-instagram: hsl(330, 80%, 55%);
   --color-x: hsl(0, 0%, 90%);
+  --color-ok: hsl(20, 85%, 55%);
   
   /* Transitions */
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -361,6 +362,11 @@ select:focus {
 .platform-badge.x {
   background-color: hsla(0, 0%, 90%, 0.12);
   color: var(--color-x);
+}
+
+.platform-badge.ok {
+  background-color: hsla(20, 85%, 55%, 0.12);
+  color: var(--color-ok);
 }
 
 .city-badge {

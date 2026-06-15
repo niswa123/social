@@ -193,6 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Platform logo character or name
       let platformLabel = item.platform.toUpperCase();
       if (item.platform === 'x') platformLabel = 'X (Twitter)';
+      else if (item.platform === 'ok') platformLabel = 'Одноклассники';
       
       // Link generators
       let link = '#';
@@ -200,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
       else if (item.platform === 'vk') link = `https://vk.com/${item.handle}`;
       else if (item.platform === 'instagram') link = `https://instagram.com/${item.handle}`;
       else if (item.platform === 'x') link = `https://x.com/${item.handle}`;
+      else if (item.platform === 'ok') link = `https://ok.ru/${item.handle}`;
 
       const likesDisplay = item.platform === 'telegram' ? 'Н/Д' : formatNumber(item.avg_likes);
       const viewsDisplay = item.avg_views > 0 ? formatNumber(item.avg_views) : 'Н/Д';

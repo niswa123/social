@@ -290,5 +290,38 @@
     "fallback_views": 920,
     "fallback_likes": 38,
     "fallback_avatar": "https://img.icons8.com/color/150/twitter--v1.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "vesticrimea",
+    "name": "Вести Крым",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "fallback_followers": 24500,
+    "fallback_views": 4800,
+    "fallback_likes": 120,
+    "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "crimea24tv",
+    "name": "Крым 24",
+    "city": "Крым (Общий)",
+    "category": "Новости",
+    "fallback_followers": 18200,
+    "fallback_views": 3500,
+    "fallback_likes": 95,
+    "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
+  },
+  {
+    "platform": "ok",
+    "handle": "typical_simferopol",
+    "name": "Типичный Симферополь",
+    "city": "Симферополь",
+    "category": "Подслушано",
+    "fallback_followers": 12500,
+    "fallback_views": 2100,
+    "fallback_likes": 55,
+    "fallback_avatar": "https://img.icons8.com/color/150/odnoklassniki.png"
   }
 ]
